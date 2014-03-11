@@ -13,7 +13,7 @@
 	<body> 
 		<div class="row" >
 			<div class="col-md-4"> 
-				<img src="images/stillers.jpg" class="tileimg">
+				<img src="images/stillers.jpg" class="tileimg" id="img">
 			</div>
 
 			<div class="col-md-4"> 
@@ -53,8 +53,18 @@
 			</div>
 		</div>
 
+
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script> 
+    	$(".tileimg").on( "mouseenter", function() { 
+    		$( this ).css( { "opacity": "1" });
+    	});
+
 	</body>
 
-
+</html>
 
 
