@@ -13,21 +13,21 @@
 	<body> 
 		<div class="row" >
 			<div class="col-md-4"> 
-				<img src="images/stillers.jpg" class="tileimg" id="img">
+				<img id="img" src="images/stillers.jpg" alt="image" class="tileimg">
 			</div>
 
 			<div class="col-md-4"> 
-				<img src="images/pittsburgh.jpg" class="tileimg">
+				<img src="images/pittsburgh.jpg" alt="image" class="tileimg">
 			</div>
 
 			<div class="col-md-4"> 
-				<img src="images/stillers.jpg" class="tileimg">
+				<img src="images/stillers.jpg"  alt="image" class="tileimg">
 			</div>
 		</div>
 
 		<div class="row"> 
 			<div class="col-md-4"> 
-				<img src="images/pittsburgh.jpg" class="tileimg">
+				<img src="images/pittsburgh.jpg" alt="image" class="tileimg">
 			</div>
 
 			<div class="col-md-4"> 
@@ -35,21 +35,21 @@
 			</div>
 
 			<div class="col-md-4"> 
-				<img src="images/resume.png" class="tileimg">
+				<img src="images/resume.png" alt="image" class="tileimg">
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-4"> 
-				<img src="images/stillers.jpg" class="tileimg">
+				<img src="images/stillers.jpg" alt="image" class="tileimg">
 			</div>
 
 			<div class="col-md-4"> 
-				<img src="images/contact.png" class="tileimg">
+				<img src="images/contact.png" alt="image" class="tileimg">
 			</div>
 
 			<div class="col-md-4"> 
-				<img src="images/linkedin.jpg" class="tileimg">
+				<img src="images/linkedin.jpg" alt="image" class="tileimg">
 			</div>
 		</div>
 
@@ -59,10 +59,14 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script> 
-    	$(".tileimg").hover( function() { 
+    	$(".tileimg").mouseenter( function() { 
     		$( this ).css("opacity","1");
     	});
+    	$(".tileimg").mouseleave( function() { 
+    		$( this ).css("opacity",".6");
+    	});
 
+	</script>
 	</body>
 
 </html>
