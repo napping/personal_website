@@ -12,6 +12,8 @@
 
 .row { 
 	padding: 8px;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 .col-md-4 { 
