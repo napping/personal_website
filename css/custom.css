@@ -76,7 +76,7 @@ h1 {
 
 .pic-me { 
 	position: absolute;
-	margin-left: 10%;
+	margin-left: 20%;
 	margin-top: 25%;
 	width: 90%;
 	height: auto;
@@ -91,3 +91,4 @@ h1 {
     width: 60%; 
     height: 1px;
 }
+
