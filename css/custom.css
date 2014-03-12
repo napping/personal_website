@@ -7,11 +7,11 @@
 	display: block;
   	max-width: 100%;
   	height: auto;
-  	border-radius: 10%;
+  	border-radius:10%;
 }
 
 .row { 
-	padding: 8px;
+	padding: 4px;
 }
 
 
