@@ -160,10 +160,10 @@
 	    <script src="js/bootstrap.min.js"></script>
 	    <script> 
 	    	$(".tile-img").mouseenter( function() { 
-	    		$( this ).css({"opacity":"1","-webkit-filter": "blur(0px)"});
+	    		$( this ).css({"opacity":"1"});
 	    	});
 	    	$(".tile-img").mouseleave( function() { 
-	    		$( this ).css({"opacity": ".6", "-webkit-filter": "blur(1px)"});
+	    		$( this ).css({"opacity": ".6"});
 	    	});
 		</script>
 
@@ -209,6 +209,17 @@
 		</script>
 		<script>
 			$("#contact-button").click( function() {
+				$( "#contact" ).hide("slow", function () { 
+					$("#contact-cover").show("slow");
+					});
+
+			});
+		</script>
+
+		<script>
+			$("#gallery").click( function() {
+
+
 				$( "#contact" ).hide("slow", function () { 
 					$("#contact-cover").show("slow");
 					});
