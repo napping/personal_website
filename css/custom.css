@@ -4,7 +4,7 @@
 	position: relative;
 	width: 100%;
 	opacity: .5;
-	-webkit-filter: blur(2px);
+	-webkit-filter: blur(1px);
 	display: block;
   	max-width: 100%;
   	height: auto;
