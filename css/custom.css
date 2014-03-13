@@ -4,6 +4,7 @@
 	position: relative;
 	width: 100%;
 	opacity: .5;
+	-webkit-filter: blur(0px);
 	display: block;
   	max-width: 100%;
   	height: auto;
@@ -137,15 +138,24 @@ div {
 }
 
 #contact { 
-	display: block;
+	display: none;
 }
 
 
 #bio-block { 
 	position: absolute;
-	top: 0%;
+	top: -5%;
 	margin-right: 4%;
 	margin-left: 4%;
+	width: 90%;
 	color: #FFFFFF;
-	font-size: .9em;
+	font-size: .8em;
+}
+
+#contact-info { 
+	position: absolute;
+	top: 0%;
+	margin: 12%;
+	width: 100%%;
+	color:#FFFFFF;
 }
