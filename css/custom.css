@@ -8,6 +8,7 @@
   	max-width: 100%;
   	height: auto;
   	border-radius:10%;
+  	cursor: pointer;
 }
 
 .row { 
@@ -44,7 +45,7 @@
 	height: 100%;
 }
 
-.div { 
+div { 
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -64,7 +65,7 @@
 	bottom: 15%;
 }
 
-h1 { 
+#name { 
 	text-align: center;
 	margin-top: 25%;
 	color: #333;
@@ -91,3 +92,57 @@ h1 {
 }
 
 
+#hidden-favs { 
+	position: relative;
+	width: 100%;
+  	max-width: 100%;
+  	height: auto;
+  	border-color: #FFFFFF;
+  	border-width: 3px;
+  	border-radius:10%;
+}
+
+.left-block { 
+	position: absolute;
+	left: 5%;
+	right: 50%;
+	top: 20%;
+	font-weight: bold;
+	color: #FFFFFF;
+}	
+
+.right-block { 
+	position: absolute;
+	left: 50%;
+	right: 20%:;
+	top: 20%;
+	color: #FFFFFF;
+}
+
+.label { 
+	z-index: 10;
+}
+
+.button { 
+	position: absolute;
+	top: 110%;
+}
+
+#favs { 
+	display: none;
+}
+
+#about { 
+	display: block;
+}
+
+#contact { 
+	display: block;
+}
+
+
+#bio-block { 
+	position: absolute;
+	margin: 10%;
+	color: #FFFFFF;
+}

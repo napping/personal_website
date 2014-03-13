@@ -9,9 +9,6 @@
     	<link href="css/custom.css" rel="stylesheet">
     	<script src="js/respond.js"></script>
 
-    	<script>
-    		$(body).on
-    	</script>
 	</head>
 
 	<body> 
@@ -19,21 +16,63 @@
 			<div class="contain">
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
-						<img src="images/stillers.jpg" alt="image" class="tile-img">
+					
+						<img src="images/stillers.jpg" alt="image" class="tile-img" id="favs-cover">
 							<div>
 								<span class="label label-default" style="position:absolute;top:5%;left:6%">Favorites</span>
 							</div>
+						<div style="z-index:9" id="favs">
+							<img src="images/gray.png" alt="image" id="hidden-favs">	
+							<div class="left-block"> 		
+								<ul style="text-align:left;list-style-type: none"> 
+									<li>NFL Team:</li>
+									<li>NBA Team:</li>
+									<li>Movie:</li>
+									<li>TV Show:</li>
+									<li>Food:</li>
+									<li>Dessert:</li>
+								</ul>
+							</div>
+							<div class="right-block">
+								<ul style="text-align:right;list-style-type: none"> 
+									<li>Steelers</li>
+									<li>Warriors</li>
+									<li>Pulp Fiction</li>
+									<li>Chuck</li>
+									<li>Mom's Dumplings</li>
+									<li>Klondike Bars</li>
+								</ul>
+								<div> 
+									<button id="favs-button" type="button" class="btn btn-primary" data-toggle="button">Back</button>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
-						<img src="images/pittsburgh.jpg" alt="image" class="tile-img">
+						
+						<img src="images/pittsburgh.jpg" alt="image" class="tile-img" id="about">
 							<div>
 								<span class="label label-default" style="position:absolute;top:5%;left:6%;">About</span>
 							</div>
+						
+						<!--
+						<div style="z-index:9" id="about">
+							<img src="images/gray.png" alt="image" id="hidden-about">	
+							<div id="bio-block">
+								<h1>Hello!</h1>
+									
+								<div> 
+									<button id="favs-button" type="button" class="btn btn-primary" data-toggle="button">Back</button>
+								</div>
+							</div>
+						</div>-->
 					</div>
 
+		
+
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
-						<img src="images/stillers.jpg"  alt="image" class="tile-img">
+						<img src="images/stillers.jpg"  alt="image" class="tile-img" id="gallery">
 							<div>
 								<span class="label label-default" style="position:absolute;top:5%;left:6%;">Gallery</span>
 							</div>
@@ -42,7 +81,7 @@
 
 				<div class="row"> 
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
-						<img src="images/pittsburgh.jpg" alt="image" class="tile-img">
+						<a href="http://www.github.com/shib340"><img src="images/projects.jpg" alt="image" class="tile-img" id="projects"></a>
 							<div>
 								<span class="label label-default" style="position:absolute;top:5%;left:6%;">Projects</span>
 							</div>
@@ -56,7 +95,7 @@
 								</div>
 								<div id="info-div">
 									<div>
-										<h1>Brian Z. Shi</h1>
+										<h1 id="name">Brian Z. Shi</h1>
 										<span id="line-br"></span>
 										<br/>
 										<p style="text-align:center;font-size:95%">Student <span class="glyphicon glyphicon-flash"></span> Developer</p>
@@ -83,10 +122,14 @@
 					</div>
 
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
-						<img src="images/contact.png" alt="image" class="tile-img">
+						<img src="images/contact.png" alt="image" class="tile-img" id="contact">
 							<div>
 								<span class="label label-default" style="position:absolute;top:5%;left:6%;">Contact</span>
 							</div>
+
+							<div class="hidden-contact"> 
+							</div>
+
 					</div>
 
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
@@ -95,22 +138,41 @@
 								<span class="label label-default" style="position:absolute;top:5%;left:6%;">Profile</span>
 							</div>
 					</div>
+				
 				</div>
 
 			</div>
 		</div>
-<!-- javascript -->
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script> 
-    	$(".tile-img").mouseenter( function() { 
-    		$( this ).css("opacity","1");
-    	});
-    	$(".tile-img").mouseleave( function() { 
-    		$( this ).css("opacity",".6");
-    	});
 
-	</script>
+<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script> 
+	    	$(".tile-img").mouseenter( function() { 
+	    		$( this ).css("opacity","1");
+	    	});
+	    	$(".tile-img").mouseleave( function() { 
+	    		$( this ).css("opacity",".6");
+	    	});
+		</script>
+
+		<script> 
+			$("#favs-cover").click( function() { 
+				$( this ).hide("slow", function () { 
+					$( "#favs" ).css("display", "block")
+				});
+			});
+		</script>
+
+		<script>
+			$("#favs-button").click( function() {
+				$( "#favs" ).hide("slow", function () { 
+					$("#favs-cover").show("slow");
+					});
+
+			});
+		</script>
+
 	</body>
 
 </html>
