@@ -52,7 +52,7 @@ div {
 #pic-div { 
 	position: absolute;
 	left: 8px;
-	top: 2.5%;
+	top: 0;
 	right: 55%;
 	height: 100%; 
 }
