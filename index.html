@@ -218,12 +218,21 @@
 
 		<script>
 			$("#gallery").click( function() {
-
-
-				$( "#contact" ).hide("slow", function () { 
-					$("#contact-cover").show("slow");
-					});
-
+				
+				var src = $(this).attr("src");
+				if (src === "images/friends.jpg") { 
+					$(this).attr("src", "images/brother.jpg");
+				} else if (src === "images/brother.jpg") { 
+					$(this).attr("src", "images/grad.jpg");
+				} else if (src === "images/grad.jpg") { 
+					$(this).attr("src", "images/robe.jpg");
+				} else if (src === "images/robe.jpg") { 
+					$(this).attr("src", "images/lit.jpg");
+				} else if (src === "images/lit.jpg") { 
+					$(this).attr("src", "images/forsyth.jpg");
+				} else { 
+					$(this).attr("src", "images/friends.jpg");
+				}
 			});
 		</script>
 	</body>
