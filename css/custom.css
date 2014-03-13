@@ -142,8 +142,10 @@ div {
 
 
 #bio-block { 
+	overflow: scroll;
 	position: absolute;
-	top: -5%;
+	top: 5%;
+	bottom: 5%;
 	margin-right: 4%;
 	margin-left: 4%;
 	width: 90%;
