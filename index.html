@@ -14,6 +14,7 @@
 	<body> 
 		<div style="background-color:#333;position:absolute;width:100%" class="img-responsive">
 			<div class="contain">
+<!-- ROW 1 oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo  -->
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
 					
@@ -22,7 +23,7 @@
 								<span class="label label-default" style="position:absolute;top:5%;left:6%">Favorites</span>
 							</div>
 						<div style="z-index:9" id="favs">
-							<img src="images/gray.png" alt="image" id="hidden-favs">	
+							<img src="images/gray.png" alt="image" id="hidden">	
 							<div class="left-block"> 		
 								<ul style="text-align:left;list-style-type: none"> 
 									<li>NFL Team:</li>
@@ -50,23 +51,24 @@
 					</div>
 
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
-						
-						<img src="images/pittsburgh.jpg" alt="image" class="tile-img" id="about">
+
+						<img src="images/pittsburgh.jpg" alt="image" class="tile-img" id="about-cover">
 							<div>
 								<span class="label label-default" style="position:absolute;top:5%;left:6%;">About</span>
 							</div>
-						
-						<!--
 						<div style="z-index:9" id="about">
-							<img src="images/gray.png" alt="image" id="hidden-about">	
+							<img src="images/gray.png" alt="image" id="hidden">	
 							<div id="bio-block">
-								<h1>Hello!</h1>
-									
+								<h3 style="text-align:center">Hello!</h1>
+								<p>My name is Brian Shi, and welcome to my personal website!</p>
+								<p>I am currently a freshman at the University of Pennsylvania, prospectively majoring in Computer Science.  I grew up in Mt. Lebanon, a suburb of Pittsburgh, PA, and attended Mt. Lebanon High School Class of 2013.  go blue devils.</p>
+								<p>I am interested in a career in tech, and my hobbies include movies, food, basketball, inspiration music, inspirational speeches, and learning about pretty much anything.</p>
+								<p>If you have any questions, click the contact link on the bottom and shoot me an email!</p>
 								<div> 
-									<button id="favs-button" type="button" class="btn btn-primary" data-toggle="button">Back</button>
+									<button id="about-button" type="button" class="btn btn-primary" data-toggle="button">Back</button>
 								</div>
 							</div>
-						</div>-->
+						</div>
 					</div>
 
 		
@@ -79,6 +81,7 @@
 					</div>
 				</div>
 
+<!-- ROW 2 oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
 				<div class="row"> 
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
 						<a href="http://www.github.com/shib340"><img src="images/projects.jpg" alt="image" class="tile-img" id="projects"></a>
@@ -113,6 +116,7 @@
 					</div>
 				</div>
 
+<!-- ROW 3 ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo   -->				
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-4"> 
 						<a href="http://www.upenn.edu"><img src="images/penn.jpg" alt="image" class="tile-img"></a>
@@ -173,6 +177,21 @@
 			});
 		</script>
 
+		<script> 
+			$("#about-cover").click( function() { 
+				$( this ).hide("slow", function () { 
+					$( "#about" ).css("display", "block")
+				});
+			});
+		</script>
+		<script>
+			$("#about-button").click( function() {
+				$( "#about" ).hide("slow", function () { 
+					$("#about-cover").show("slow");
+					});
+
+			});
+		</script>
 	</body>
 
 </html>

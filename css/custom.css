@@ -92,7 +92,7 @@ div {
 }
 
 
-#hidden-favs { 
+#hidden { 
 	position: relative;
 	width: 100%;
   	max-width: 100%;
@@ -133,7 +133,7 @@ div {
 }
 
 #about { 
-	display: block;
+	display: none;
 }
 
 #contact { 
@@ -143,6 +143,9 @@ div {
 
 #bio-block { 
 	position: absolute;
-	margin: 10%;
+	top: 0%;
+	margin-right: 4%;
+	margin-left: 4%;
 	color: #FFFFFF;
+	font-size: .9em;
 }
