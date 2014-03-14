@@ -16,7 +16,7 @@
 			<div class="contain">
 <!-- ROW 1 oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo  -->
 				<div class="row">
-					<div class="col-md-4" data-toggle="tooltip" data-placement="bottom" title="Click to see favs">
+					<div class="col-md-4" data-toggle="tooltip" data-placement="auto" title="Click to see favs">
 					
 						<img src="images/stillers.jpg" alt="image" class="tile-img" id="favs-cover">
 							<div>
@@ -50,7 +50,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-sm-4" data-toggle="tooltip" data-placement="bottom" title="Click to read bio"> 
+					<div class="col-md-4 col-sm-4" data-toggle="tooltip" data-placement="auto" title="Click to read bio"> 
 
 						<img src="images/pittsburgh.jpg" alt="image" class="tile-img" id="about-cover">
 							<div>
@@ -71,7 +71,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-sm-4" data-toggle="tooltip" data-placement="bottom" title="Click to go through gallery"> 
+					<div class="col-md-4 col-sm-4" data-toggle="tooltip" data-placement="auto" title="Click to go through gallery"> 
 						<img src="images/friends.jpg"  alt="image" class="tile-img" id="gallery">
 							<div>
 								<span class="label label-default" style="position:absolute;top:5%;left:6%;">Gallery</span>
@@ -221,14 +221,14 @@
 				
 				var src = $(this).attr("src");
 				if (src === "images/friends.jpg") { 
-					$(this).attr("src", "images/brother.jpg");
-				} else if (src === "images/brother.jpg") { 
 					$(this).attr("src", "images/grad.jpg");
 				} else if (src === "images/grad.jpg") { 
 					$(this).attr("src", "images/robe.jpg");
 				} else if (src === "images/robe.jpg") { 
 					$(this).attr("src", "images/lit.jpg");
 				} else if (src === "images/lit.jpg") { 
+					$(this).attr("src", "images/brother.jpg");
+				} else if (src === "images/brother.jpg") { 
 					$(this).attr("src", "images/forsyth.jpg");
 				} else { 
 					$(this).attr("src", "images/friends.jpg");
